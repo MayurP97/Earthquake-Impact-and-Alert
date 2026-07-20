@@ -25,7 +25,7 @@ try:
         'Training Time (s)': {'LightGBM (Tuned)': 45.56, 'Random Forest (Tuned)': 46.19, 'LightGBM': 0.28, 'Random Forest': 0.90, 'XGBoost': 0.28, 'K-Nearest Neighbors': 0.03, 'Logistic Regression': 0.04, 'Decision Tree': 0.04, 'Naive Bayes': 0.03, 'Support Vector Machine': 1.50, 'MLP Classifier': 0.52},
         'Prediction Time (s)': {'LightGBM (Tuned)': 0.152, 'Random Forest (Tuned)': 0.236, 'LightGBM': 0.066, 'Random Forest': 0.158, 'XGBoost': 0.045, 'K-Nearest Neighbors': 0.046, 'Logistic Regression': 0.012, 'Decision Tree': 0.013, 'Naive Bayes': 0.012, 'Support Vector Machine': 0.029, 'MLP Classifier': 0.030},
         'ROC AUC Micro Test': {'LightGBM (Tuned)': 0.9790, 'Random Forest (Tuned)': 0.9801, 'LightGBM': 0.9779, 'Random Forest': 0.9807, 'XGBoost': 0.9766, 'K-Nearest Neighbors': 0.9314, 'Logistic Regression': 0.8288, 'Decision Tree': 0.9233, 'Naive Bayes': 0.8180, 'Support Vector Machine': np.nan, 'MLP Classifier': 0.7723}
-    }).T
+    })
     results_df = results_df.sort_values(by='F1-Micro Test', ascending=False)
 except Exception as e:
     st.error(f"Error loading results_df: {e}. Please ensure it's defined or loaded from a file.")
